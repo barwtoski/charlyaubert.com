@@ -1,0 +1,25 @@
+{
+  "name": "charly-aubert-site",
+  "main": "dist/_worker.js/index.js",
+  "compatibility_date": "2025-01-21",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  // Production deploy uses custom domain
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "charlyaubert.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.charlyaubert.com",
+      "custom_domain": true
+    }
+  ]
+}
