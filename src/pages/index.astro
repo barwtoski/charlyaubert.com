@@ -21,38 +21,38 @@ import Layout from '../layouts/Layout.astro';
                     Je t'aide a designer ta vie : ton cadre de vie, ton systeme, ta philosophie.
                 </p>
                 <div class="hero-cta">
-                    <a href="#newsletter" class="btn btn-primary">Recevoir les 3 ebooks gratuits</a>
-                    <a href="#mentorat" class="btn btn-secondary">Reserver un appel</a>
+                    <a href="#newsletter" class="btn btn-primary btn-arrow">Recevoir les 3 ebooks gratuits</a>
+                    <a href="#mentorat" class="btn btn-secondary btn-arrow">Reserver un appel</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Social Proof Banner -->
-    <section class="social-proof">
+    <section class="social-proof animate-on-scroll">
         <div class="social-proof-container">
             <div class="proof-item">
-                <span class="proof-number">400+</span>
+                <span class="proof-number"><span class="counter" data-target="400">0</span>+</span>
                 <span class="proof-label">visiteurs accueillis</span>
             </div>
             <div class="proof-divider"></div>
             <div class="proof-item">
-                <span class="proof-number">3</span>
+                <span class="proof-number"><span class="counter" data-target="3">0</span></span>
                 <span class="proof-label">festivals crees</span>
             </div>
             <div class="proof-divider"></div>
             <div class="proof-item">
-                <span class="proof-number">45</span>
+                <span class="proof-number"><span class="counter" data-target="45">0</span></span>
                 <span class="proof-label">evenements organises</span>
             </div>
             <div class="proof-divider"></div>
             <div class="proof-item">
-                <span class="proof-number">200K</span>
+                <span class="proof-number"><span class="counter" data-target="200" data-suffix="K">0</span></span>
                 <span class="proof-label">vues YouTube</span>
             </div>
             <div class="proof-divider"></div>
             <div class="proof-item">
-                <span class="proof-number">5000+</span>
+                <span class="proof-number"><span class="counter" data-target="5000">0</span>+</span>
                 <span class="proof-label">abonnes newsletter</span>
             </div>
         </div>
@@ -65,7 +65,7 @@ import Layout from '../layouts/Layout.astro';
             <h2 class="section-title">Comment puis-je t'aider ?</h2>
             <p class="section-subtitle">Trois piliers pour creer une vie alignee</p>
             
-            <div class="pillars-grid">
+            <div class="pillars-grid stagger-animation">
                 <!-- Pillar 1: Cadre de vie -->
                 <div class="pillar-card">
                     <div class="pillar-icon">
@@ -149,7 +149,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Photo Gallery -->
-    <section class="gallery">
+    <section class="gallery animate-on-scroll">
         <div class="gallery-grid">
             <div class="gallery-item gallery-item-large">
                 <img src="/images/laom-vue-ensemble.jpg" alt="LAOM - Vue d'ensemble" loading="lazy" />
@@ -184,8 +184,77 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials animate-on-scroll">
+        <div class="testimonials-container">
+            <h2 class="section-title">Ce qu'ils disent</h2>
+            <p class="section-subtitle">Retours de visiteurs, participants et collaborateurs</p>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonials-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">
+                            Visiter LAOM a ete un declic pour moi. Voir qu'il est possible de construire 
+                            autrement, de vivre autrement. Charly partage avec une generosite rare.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">M</div>
+                            <span class="testimonial-name">Marie L.</span>
+                            <span class="testimonial-role">Visiteuse LAOM</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">
+                            Le mentorat avec Charly m'a aide a structurer mon projet d'eco-lieu. 
+                            Son experience concrete et sa vision claire sont inestimables.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">T</div>
+                            <span class="testimonial-name">Thomas B.</span>
+                            <span class="testimonial-role">Porteur de projet coliving</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">
+                            La newsletter de Charly est une de mes lectures preferees. Des reflexions 
+                            profondes, des retours d'experience honnetes, et toujours des outils concrets.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">S</div>
+                            <span class="testimonial-name">Sophie D.</span>
+                            <span class="testimonial-role">Abonnee newsletter</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn carousel-prev" aria-label="Temoignage precedent">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="carousel-dots">
+                        <button class="carousel-dot active" data-index="0" aria-label="Temoignage 1"></button>
+                        <button class="carousel-dot" data-index="1" aria-label="Temoignage 2"></button>
+                        <button class="carousel-dot" data-index="2" aria-label="Temoignage 3"></button>
+                    </div>
+                    <button class="carousel-btn carousel-next" aria-label="Temoignage suivant">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Videos Section -->
-    <section class="videos">
+    <section class="videos animate-on-scroll">
         <div class="videos-container">
             <h2 class="section-title">Decouvre les coulisses de LAOM</h2>
             <p class="section-subtitle">Vlogs chantier, retours d'experience et reflexions</p>
@@ -215,7 +284,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Newsletter Section -->
-    <section id="newsletter" class="newsletter">
+    <section id="newsletter" class="newsletter animate-on-scroll">
         <div class="newsletter-container">
             <div class="newsletter-content">
                 <h2 class="newsletter-title">Rejoins 5000+ personnes qui creent leur vie alignee</h2>
@@ -263,7 +332,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Resources Section -->
-    <section id="mentorat" class="resources">
+    <section id="mentorat" class="resources animate-on-scroll">
         <div class="resources-container">
             <h2 class="section-title">Ressources</h2>
             
@@ -315,7 +384,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Final CTA -->
-    <section class="final-cta">
+    <section class="final-cta animate-on-scroll">
         <div class="final-cta-container">
             <div class="final-cta-image">
                 <img src="/images/charly-fenetre.jpeg" alt="Charly Aubert" loading="lazy" />
@@ -353,3 +422,136 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+
+<script>
+    // ========================================
+    // INTERSECTION OBSERVER - Scroll Animations
+    // ========================================
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    
+                    // Trigger counter animation if counters are in this element
+                    const counters = entry.target.querySelectorAll('.counter');
+                    counters.forEach(counter => animateCounter(counter));
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animate-on-scroll elements
+        document.querySelectorAll('.animate-on-scroll, .stagger-animation').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ========================================
+        // ANIMATED COUNTERS
+        // ========================================
+        function animateCounter(counter) {
+            if (counter.dataset.animated) return;
+            counter.dataset.animated = 'true';
+            
+            const target = parseInt(counter.dataset.target);
+            const suffix = counter.dataset.suffix || '';
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
+
+            const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                    counter.textContent = Math.floor(current) + suffix;
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target + suffix;
+                }
+            };
+
+            updateCounter();
+        }
+
+        // ========================================
+        // TESTIMONIALS CAROUSEL
+        // ========================================
+        const track = document.querySelector('.testimonials-track');
+        const cards = document.querySelectorAll('.testimonial-card');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const prevBtn = document.querySelector('.carousel-prev');
+        const nextBtn = document.querySelector('.carousel-next');
+        
+        if (track && cards.length > 0) {
+            let currentIndex = 0;
+            const totalSlides = cards.length;
+
+            function updateCarousel() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            }
+
+            // Event listeners
+            if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+            if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+
+            // Auto-play carousel (optional - every 5 seconds)
+            let autoPlay = setInterval(nextSlide, 5000);
+            
+            // Pause on hover
+            const carousel = document.querySelector('.testimonials-carousel');
+            if (carousel) {
+                carousel.addEventListener('mouseenter', () => clearInterval(autoPlay));
+                carousel.addEventListener('mouseleave', () => {
+                    autoPlay = setInterval(nextSlide, 5000);
+                });
+            }
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') prevSlide();
+                if (e.key === 'ArrowRight') nextSlide();
+            });
+
+            // Touch/swipe support
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            track.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            track.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                const diff = touchStartX - touchEndX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) nextSlide();
+                    else prevSlide();
+                }
+            }, { passive: true });
+        }
+    });
+</script>
