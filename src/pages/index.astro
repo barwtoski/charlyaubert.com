@@ -3,64 +3,182 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Charly Aubert - Creer une vie alignee">
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-image">
-                <img src="/images/charly-hero.jpg" alt="Charly Aubert" loading="eager" />
+    <!-- NEW HERO - Card on Card Style -->
+    <section class="hero-new">
+        <div class="hero-card">
+            <div class="hero-card-inner">
+                <div class="hero-card-image">
+                    <img src="/images/charly-hero.jpg" alt="Charly Aubert" loading="eager" />
+                </div>
+                <div class="hero-card-content">
+                    <p class="hero-card-greeting">Hey, je suis Charly.</p>
+                    <h1 class="hero-card-title">J'ai cree LAOM - le plus grand batiment en paille porteuse au monde.</h1>
+                    <p class="hero-card-description">
+                        21 hectares, 800m2 en paille, un eco-village en Dordogne. 
+                        Aujourd'hui je t'aide a <strong>creer ta vie alignee</strong> : 
+                        ton cadre de vie, ton systeme, ta philosophie.
+                    </p>
+                    
+                    <!-- Newsletter Card -->
+                    <div class="hero-newsletter-card">
+                        <div class="hero-newsletter-header">
+                            <div class="hero-newsletter-avatars">
+                                <span>M</span>
+                                <span>T</span>
+                                <span>S</span>
+                                <span>+</span>
+                            </div>
+                            <div class="hero-newsletter-stats">
+                                Rejoins <strong>5000+ lecteurs</strong>
+                            </div>
+                        </div>
+                        <form 
+                            action="https://app.kit.com/forms/8987350/subscriptions" 
+                            class="hero-newsletter-form seva-form formkit-form" 
+                            method="post" 
+                            data-sv-form="8987350" 
+                            data-uid="af2e0fc1e5" 
+                            data-format="inline" 
+                            data-version="5"
+                        >
+                            <input 
+                                name="email_address" 
+                                type="email" 
+                                required 
+                                placeholder="Ton email"
+                                autocomplete="email"
+                            />
+                            <button type="submit" class="btn btn-primary">S'inscrire</button>
+                        </form>
+                        <p class="hero-newsletter-note">Pas de spam. Desabonnement en un clic.</p>
+                    </div>
+                </div>
             </div>
-            <div class="hero-content">
-                <p class="hero-greeting">Hey, je suis Charly.</p>
-                <h1 class="hero-title">Creer une vie alignee.</h1>
-                <p class="hero-description">
-                    J'ai cree <strong>LAOM</strong> - 21 hectares, 800m2 en paille, 
-                    le plus grand batiment porteur en paille au monde. Et un <strong>systeme 
-                    d'organisation personnelle</strong> augmente par l'IA.
-                </p>
-                <p class="hero-subtitle">
-                    Je t'aide a designer ta vie : ton cadre de vie, ton systeme, ta philosophie.
-                </p>
-                <div class="hero-cta">
-                    <a href="#newsletter" class="btn btn-primary btn-arrow">Recevoir les 3 ebooks gratuits</a>
-                    <a href="#mentorat" class="btn btn-secondary btn-arrow">Reserver un appel</a>
+            
+            <!-- Social Proof -->
+            <div class="hero-social-proof">
+                <div class="hero-proof-item">
+                    <span class="hero-proof-number"><span class="counter" data-target="400">0</span>+</span>
+                    <span class="hero-proof-label">visiteurs accueillis</span>
+                </div>
+                <div class="hero-proof-item">
+                    <span class="hero-proof-number"><span class="counter" data-target="3">0</span></span>
+                    <span class="hero-proof-label">festivals crees</span>
+                </div>
+                <div class="hero-proof-item">
+                    <span class="hero-proof-number"><span class="counter" data-target="45">0</span></span>
+                    <span class="hero-proof-label">evenements</span>
+                </div>
+                <div class="hero-proof-item">
+                    <span class="hero-proof-number"><span class="counter" data-target="200" data-suffix="K">0</span></span>
+                    <span class="hero-proof-label">vues YouTube</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Social Proof Banner -->
-    <section class="social-proof animate-on-scroll">
-        <div class="social-proof-container">
-            <div class="proof-item">
-                <span class="proof-number"><span class="counter" data-target="400">0</span>+</span>
-                <span class="proof-label">visiteurs accueillis</span>
+    <!-- Who Am I Section -->
+    <section class="who-am-i animate-on-scroll">
+        <div class="who-am-i-container">
+            <div class="who-am-i-image">
+                <img src="/images/charly-portrait.jpg" alt="Charly Aubert" loading="lazy" />
             </div>
-            <div class="proof-divider"></div>
-            <div class="proof-item">
-                <span class="proof-number"><span class="counter" data-target="3">0</span></span>
-                <span class="proof-label">festivals crees</span>
-            </div>
-            <div class="proof-divider"></div>
-            <div class="proof-item">
-                <span class="proof-number"><span class="counter" data-target="45">0</span></span>
-                <span class="proof-label">evenements organises</span>
-            </div>
-            <div class="proof-divider"></div>
-            <div class="proof-item">
-                <span class="proof-number"><span class="counter" data-target="200" data-suffix="K">0</span></span>
-                <span class="proof-label">vues YouTube</span>
-            </div>
-            <div class="proof-divider"></div>
-            <div class="proof-item">
-                <span class="proof-number"><span class="counter" data-target="5000">0</span>+</span>
-                <span class="proof-label">abonnes newsletter</span>
+            <div class="who-am-i-content">
+                <h2>Salut, moi c'est Charly.</h2>
+                <p>
+                    Apres des annees dans le monde corporate, j'ai tout quitte pour creer 
+                    ce qui me semblait impossible : un eco-village en Dordogne avec le plus 
+                    grand batiment en paille porteuse au monde.
+                </p>
+                <p>
+                    Aujourd'hui, je partage ce que j'ai appris sur la creation de projets 
+                    regeneratifs, l'organisation personnelle augmentee par l'IA, et une 
+                    philosophie de vie basee sur les "impulsions de joie".
+                </p>
+                <a href="/mon-histoire" class="who-am-i-link">
+                    Decouvrir mon histoire
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
             </div>
         </div>
-        <p class="proof-highlight">Le plus grand batiment en paille porteuse au monde</p>
+    </section>
+
+    <!-- Ebooks Section -->
+    <section class="ebooks-section animate-on-scroll">
+        <div class="ebooks-container">
+            <h2 class="section-title">3 ressources gratuites</h2>
+            <p class="section-subtitle">Pour t'aider a creer ta vie alignee</p>
+            
+            <div class="ebooks-grid stagger-animation">
+                <!-- Ebook 1: La Home -->
+                <div class="ebook-card">
+                    <div class="ebook-cover">
+                        <div class="ebook-book">
+                            <div class="ebook-front ebook-green">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                <span class="ebook-front-title">Creer son cadre de vie</span>
+                                <span class="ebook-front-subtitle">La Home</span>
+                            </div>
+                            <div class="ebook-spine ebook-green"></div>
+                        </div>
+                    </div>
+                    <h3 class="ebook-title">Creer son cadre de vie</h3>
+                    <p class="ebook-subtitle">Guide pratique pour creer ton lieu de vie ideal</p>
+                    <a href="#newsletter" class="btn btn-ebook">Telecharger gratuitement</a>
+                </div>
+
+                <!-- Ebook 2: Grand Shambala -->
+                <div class="ebook-card">
+                    <div class="ebook-cover">
+                        <div class="ebook-book">
+                            <div class="ebook-front ebook-warm">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                                </svg>
+                                <span class="ebook-front-title">Construction du Grand Shambala</span>
+                                <span class="ebook-front-subtitle">Les coulisses</span>
+                            </div>
+                            <div class="ebook-spine ebook-warm"></div>
+                        </div>
+                    </div>
+                    <h3 class="ebook-title">Le Grand Shambala</h3>
+                    <p class="ebook-subtitle">Les coulisses de la construction de LAOM</p>
+                    <a href="#newsletter" class="btn btn-ebook">Telecharger gratuitement</a>
+                </div>
+
+                <!-- Ebook 3: Framework -->
+                <div class="ebook-card">
+                    <div class="ebook-cover">
+                        <div class="ebook-book">
+                            <div class="ebook-front ebook-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                                </svg>
+                                <span class="ebook-front-title">Framework vie alignee</span>
+                                <span class="ebook-front-subtitle">Philosophie</span>
+                            </div>
+                            <div class="ebook-spine ebook-blue"></div>
+                        </div>
+                    </div>
+                    <h3 class="ebook-title">Vie alignee</h3>
+                    <p class="ebook-subtitle">Ma methode de prise de decision par impulsions de joie</p>
+                    <a href="#newsletter" class="btn btn-ebook">Telecharger gratuitement</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- 3 Pillars Section -->
-    <section id="pillars" class="pillars">
+    <section id="pillars" class="pillars animate-on-scroll">
         <div class="pillars-container">
             <h2 class="section-title">Comment puis-je t'aider ?</h2>
             <p class="section-subtitle">Trois piliers pour creer une vie alignee</p>
@@ -77,7 +195,7 @@ import Layout from '../layouts/Layout.astro';
                     <h3 class="pillar-title">Creer son cadre de vie</h3>
                     <p class="pillar-description">
                         Tu veux creer un eco-village, un coliving, ou un projet d'habitat partage ? 
-                        Je t'accompagne de A a Z : financement, construction, juridique, gouvernance.
+                        Je t'accompagne de A a Z.
                     </p>
                     <ul class="pillar-list">
                         <li>Financement de projets complexes</li>
@@ -85,11 +203,6 @@ import Layout from '../layouts/Layout.astro';
                         <li>Navigation juridique & administrative</li>
                         <li>Business model coliving</li>
                     </ul>
-                    <div class="pillar-ebook">
-                        <span class="ebook-badge">Ebook gratuit</span>
-                        <p class="ebook-title">Creer son cadre de vie : La Home</p>
-                        <a href="#newsletter" class="btn btn-ebook">Rejoindre la liste d'attente</a>
-                    </div>
                 </div>
 
                 <!-- Pillar 2: Systeme -->
@@ -102,8 +215,7 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                     <h3 class="pillar-title">Batir son systeme</h3>
                     <p class="pillar-description">
-                        Tu veux un systeme d'organisation qui travaille pour toi, augmente par l'IA ? 
-                        Decouvre mon Personal Operating System, open source.
+                        Tu veux un systeme d'organisation qui travaille pour toi, augmente par l'IA ?
                     </p>
                     <ul class="pillar-list">
                         <li>Personal Operating System (POS)</li>
@@ -111,11 +223,6 @@ import Layout from '../layouts/Layout.astro';
                         <li>Automatisation & workflows</li>
                         <li>Productivite alignee</li>
                     </ul>
-                    <div class="pillar-ebook">
-                        <span class="ebook-badge">Ebook gratuit</span>
-                        <p class="ebook-title">Construction du Grand Shambala</p>
-                        <a href="#newsletter" class="btn btn-ebook">Rejoindre la liste d'attente</a>
-                    </div>
                 </div>
 
                 <!-- Pillar 3: Framework -->
@@ -138,11 +245,6 @@ import Layout from '../layouts/Layout.astro';
                         <li>Alignement personnel & professionnel</li>
                         <li>Design de vie intentionnel</li>
                     </ul>
-                    <div class="pillar-ebook">
-                        <span class="ebook-badge">Ebook gratuit</span>
-                        <p class="ebook-title">Framework pour creer une vie alignee</p>
-                        <a href="#newsletter" class="btn btn-ebook">Rejoindre la liste d'attente</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -192,7 +294,6 @@ import Layout from '../layouts/Layout.astro';
             
             <div class="testimonials-carousel">
                 <div class="testimonials-track">
-                    <!-- Testimonial 1 -->
                     <div class="testimonial-card">
                         <p class="testimonial-quote">
                             Visiter LAOM a ete un declic pour moi. Voir qu'il est possible de construire 
@@ -205,7 +306,6 @@ import Layout from '../layouts/Layout.astro';
                         </div>
                     </div>
                     
-                    <!-- Testimonial 2 -->
                     <div class="testimonial-card">
                         <p class="testimonial-quote">
                             Le mentorat avec Charly m'a aide a structurer mon projet d'eco-lieu. 
@@ -218,7 +318,6 @@ import Layout from '../layouts/Layout.astro';
                         </div>
                     </div>
                     
-                    <!-- Testimonial 3 -->
                     <div class="testimonial-card">
                         <p class="testimonial-quote">
                             La newsletter de Charly est une de mes lectures preferees. Des reflexions 
@@ -283,6 +382,80 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section class="blog-section animate-on-scroll">
+        <div class="blog-section-container">
+            <h2 class="section-title">Mes reflexions</h2>
+            <p class="section-subtitle">Articles sur ma philosophie, mes projets et ma vision</p>
+            
+            <div class="blog-grid">
+                <a href="/blog/philosophie-de-vie" class="blog-card">
+                    <span class="blog-card-tag">Philosophie</span>
+                    <h3 class="blog-card-title">Les impulsions de joie : ma methode de prise de decision</h3>
+                    <p class="blog-card-excerpt">
+                        Comment j'ai appris a ecouter mes impulsions de joie pour prendre 
+                        des decisions alignees avec qui je suis vraiment.
+                    </p>
+                    <span class="blog-card-link">
+                        Lire l'article
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+                
+                <a href="/blog/histoire-de-laom" class="blog-card">
+                    <span class="blog-card-tag">LAOM</span>
+                    <h3 class="blog-card-title">L'histoire de LAOM : du reve au plus grand batiment en paille</h3>
+                    <p class="blog-card-excerpt">
+                        Comment un reve fou est devenu realite : les coulisses de la creation 
+                        de LAOM, de l'idee initiale a aujourd'hui.
+                    </p>
+                    <span class="blog-card-link">
+                        Lire l'article
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+                
+                <a href="/blog/economie-regenerative" class="blog-card">
+                    <span class="blog-card-tag">Vision</span>
+                    <h3 class="blog-card-title">Economie regenerative vs economie extractive</h3>
+                    <p class="blog-card-excerpt">
+                        Pourquoi je crois que l'avenir appartient aux projets qui regenerent 
+                        plutot qu'a ceux qui extraient.
+                    </p>
+                    <span class="blog-card-link">
+                        Lire l'article
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+                
+                <a href="/blog/fractale-du-beau" class="blog-card">
+                    <span class="blog-card-tag">Philosophie</span>
+                    <h3 class="blog-card-title">La fractale du beau</h3>
+                    <p class="blog-card-excerpt">
+                        Le beau a toutes les echelles : comment ce principe guide mes decisions 
+                        dans la construction, la vie et les relations.
+                    </p>
+                    <span class="blog-card-link">
+                        Lire l'article
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Newsletter Section -->
     <section id="newsletter" class="newsletter animate-on-scroll">
         <div class="newsletter-container">
@@ -293,7 +466,7 @@ import Layout from '../layouts/Layout.astro';
                     sur la creation de projets regeneratifs, et des outils concrets.
                 </p>
                 <div class="ebooks-preview">
-                    <p class="ebooks-title">3 ebooks gratuits pour les inscrits :</p>
+                    <p class="ebooks-title">+ 3 ebooks gratuits pour les inscrits :</p>
                     <ul class="ebooks-list">
                         <li>Construction du Grand Shambala</li>
                         <li>Creer son cadre de vie : La Home</li>
@@ -322,7 +495,7 @@ import Layout from '../layouts/Layout.astro';
                             autocomplete="email"
                         />
                         <button type="submit" class="btn btn-primary form-submit">
-                            Rejoindre la liste d'attente
+                            Rejoindre
                         </button>
                     </div>
                     <p class="form-note">Pas de spam. Desabonnement en un clic.</p>
@@ -424,10 +597,8 @@ import Layout from '../layouts/Layout.astro';
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 
 <script>
-    // ========================================
-    // INTERSECTION OBSERVER - Scroll Animations
-    // ========================================
     document.addEventListener('DOMContentLoaded', () => {
+        // Intersection Observer for scroll animations
         const observerOptions = {
             root: null,
             rootMargin: '0px',
@@ -439,26 +610,29 @@ import Layout from '../layouts/Layout.astro';
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
                     
-                    // Trigger counter animation if counters are in this element
+                    // Trigger counter animation
                     const counters = entry.target.querySelectorAll('.counter');
-                    counters.forEach(counter => animateCounter(counter));
+                    counters.forEach(counter => animateCounter(counter as HTMLElement));
                 }
             });
         }, observerOptions);
 
-        // Observe all animate-on-scroll elements
         document.querySelectorAll('.animate-on-scroll, .stagger-animation').forEach(el => {
             observer.observe(el);
         });
 
-        // ========================================
-        // ANIMATED COUNTERS
-        // ========================================
-        function animateCounter(counter) {
+        // Also observe hero social proof
+        const heroSocialProof = document.querySelector('.hero-social-proof');
+        if (heroSocialProof) {
+            observer.observe(heroSocialProof);
+        }
+
+        // Animated counters
+        function animateCounter(counter: HTMLElement) {
             if (counter.dataset.animated) return;
             counter.dataset.animated = 'true';
             
-            const target = parseInt(counter.dataset.target);
+            const target = parseInt(counter.dataset.target || '0');
             const suffix = counter.dataset.suffix || '';
             const duration = 2000;
             const increment = target / (duration / 16);
@@ -477,10 +651,8 @@ import Layout from '../layouts/Layout.astro';
             updateCounter();
         }
 
-        // ========================================
-        // TESTIMONIALS CAROUSEL
-        // ========================================
-        const track = document.querySelector('.testimonials-track');
+        // Testimonials carousel
+        const track = document.querySelector('.testimonials-track') as HTMLElement | null;
         const cards = document.querySelectorAll('.testimonial-card');
         const dots = document.querySelectorAll('.carousel-dot');
         const prevBtn = document.querySelector('.carousel-prev');
@@ -491,7 +663,9 @@ import Layout from '../layouts/Layout.astro';
             const totalSlides = cards.length;
 
             function updateCarousel() {
-                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                if (track) {
+                    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }
                 dots.forEach((dot, index) => {
                     dot.classList.toggle('active', index === currentIndex);
                 });
@@ -507,7 +681,6 @@ import Layout from '../layouts/Layout.astro';
                 updateCarousel();
             }
 
-            // Event listeners
             if (nextBtn) nextBtn.addEventListener('click', nextSlide);
             if (prevBtn) prevBtn.addEventListener('click', prevSlide);
             
@@ -518,10 +691,9 @@ import Layout from '../layouts/Layout.astro';
                 });
             });
 
-            // Auto-play carousel (optional - every 5 seconds)
+            // Auto-play
             let autoPlay = setInterval(nextSlide, 5000);
             
-            // Pause on hover
             const carousel = document.querySelector('.testimonials-carousel');
             if (carousel) {
                 carousel.addEventListener('mouseenter', () => clearInterval(autoPlay));
@@ -530,21 +702,15 @@ import Layout from '../layouts/Layout.astro';
                 });
             }
 
-            // Keyboard navigation
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowLeft') prevSlide();
-                if (e.key === 'ArrowRight') nextSlide();
-            });
-
-            // Touch/swipe support
+            // Touch support
             let touchStartX = 0;
             let touchEndX = 0;
 
-            track.addEventListener('touchstart', (e) => {
+            track.addEventListener('touchstart', (e: TouchEvent) => {
                 touchStartX = e.changedTouches[0].screenX;
             }, { passive: true });
 
-            track.addEventListener('touchend', (e) => {
+            track.addEventListener('touchend', (e: TouchEvent) => {
                 touchEndX = e.changedTouches[0].screenX;
                 const diff = touchStartX - touchEndX;
                 if (Math.abs(diff) > 50) {
