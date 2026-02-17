@@ -1,0 +1,147 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const articles = [
+  {
+    title: "Comment je pilote un ecolieu de 21 hectares avec une IA",
+    description: "Recit personnel d'un systeme de pilotage de vie construit avec Claude Code, Obsidian et la methode PARA.",
+    date: "8 fevrier 2026",
+    slug: "piloter-sa-vie-avec-une-ia",
+    tags: ["ia", "organisation", "claude-code"]
+  },
+  {
+    title: "Grand Shambala — le plus grand batiment en paille porteuse au monde",
+    description: "L'histoire d'un batiment de 800m2 en paille porteuse, du premier mur au bardage Corten.",
+    date: "3 fevrier 2026",
+    slug: "grand-shambala",
+    tags: ["construction", "paille-porteuse", "ecolieu"]
+  },
+  {
+    title: "Petit Shambala — le batiment qu'on n'avait jamais prevu de construire",
+    description: "Comment un studio de yoga refuse en Occitanie est devenu notre maison de 73m2.",
+    date: "3 fevrier 2026",
+    slug: "petit-shambala",
+    tags: ["construction", "eco-construction", "histoire"]
+  },
+  {
+    title: "Comment 20 benevoles ont construit le Shala en un ete",
+    description: "L'histoire d'un chantier participatif : 121m2, 6 metres de haut, zero professionnel.",
+    date: "3 fevrier 2026",
+    slug: "salle-de-pratique",
+    tags: ["construction", "communaute", "chantier-participatif"]
+  }
+];
+---
+
+<Layout title="Blog — Charly Aubert" description="Articles sur la construction, l'IA, et la vie a LAOM.">
+  <article class="prose">
+    <h1>Ce que j'ecris</h1>
+    <span class="update-date">4 articles</span>
+
+    <div class="blog-list">
+      {articles.map((article) => (
+        <a href={`/blog/${article.slug}`} class="blog-item">
+          <div class="blog-item-content">
+            <span class="blog-date">{article.date}</span>
+            <h2 class="blog-title">{article.title}</h2>
+            <p class="blog-desc">{article.description}</p>
+            <div class="blog-tags">
+              {article.tags.map((tag) => (
+                <span class="blog-tag">{tag}</span>
+              ))}
+            </div>
+          </div>
+          <span class="blog-arrow">-&gt;</span>
+        </a>
+      ))}
+    </div>
+  </article>
+</Layout>
+
+<style>
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: var(--space-lg);
+}
+
+.blog-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+  color: var(--color-text-sub);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: var(--radius-sm);
+  margin: 0 -1rem;
+}
+
+.blog-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.blog-item:hover {
+  background-color: var(--color-green-dim);
+  color: var(--color-text);
+}
+
+.blog-item-content {
+  flex: 1;
+}
+
+.blog-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.blog-item h2.blog-title {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0.25rem 0 0.4rem;
+  line-height: 1.4;
+}
+
+.blog-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.blog-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.blog-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-orange);
+  background: rgba(250, 179, 135, 0.1);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.blog-arrow {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-green);
+  flex-shrink: 0;
+  opacity: 0;
+  margin-top: 1.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.blog-item:hover .blog-arrow {
+  opacity: 1;
+}
+</style>

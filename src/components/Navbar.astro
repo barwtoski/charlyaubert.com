@@ -1,0 +1,66 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/" class="navbar-logo">charly aubert</a>
+    <div class="navbar-links">
+      <a href="/blog" class:list={[{ active: currentPath.startsWith('/blog') }]}>blog</a>
+      <a href="/nila" class:list={[{ active: currentPath === '/nila' || currentPath === '/nila/' || currentPath === '/site' || currentPath === '/site/' }]}>nila</a>
+      <a href="/now" class:list={[{ active: currentPath === '/now' || currentPath === '/now/' }]}>now</a>
+      <a href="/a-propos" class:list={[{ active: currentPath === '/a-propos' || currentPath === '/a-propos/' }]}>a propos</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+.navbar {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 1.5rem;
+}
+
+.navbar-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  transition: color 0.2s ease;
+}
+
+.navbar-logo:hover {
+  color: var(--color-green);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.navbar-links a {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--color-green);
+}
+
+.navbar-links a.active {
+  color: var(--color-green);
+}
+</style>

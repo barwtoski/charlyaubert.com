@@ -2,722 +2,636 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Charly Aubert - Creer une vie alignee">
-    <!-- NEW HERO - Card on Card Style -->
-    <section class="hero-new">
-        <div class="hero-card">
-            <div class="hero-card-inner">
-                <div class="hero-card-image">
-                    <img src="/images/charly-hero.jpg" alt="Charly Aubert" loading="eager" />
-                </div>
-                <div class="hero-card-content">
-                    <p class="hero-card-greeting">Hey, je suis Charly.</p>
-                    <h1 class="hero-card-title">J'ai cree LAOM - le plus grand batiment en paille porteuse au monde.</h1>
-                    <p class="hero-card-description">
-                        21 hectares, 800m2 en paille, un eco-village en Dordogne. 
-                        Aujourd'hui je t'aide a <strong>creer ta vie alignee</strong> : 
-                        ton cadre de vie, ton systeme, ta philosophie.
-                    </p>
-                    
-                    <!-- Newsletter Card -->
-                    <div class="hero-newsletter-card">
-                        <div class="hero-newsletter-header">
-                            <div class="hero-newsletter-avatars">
-                                <span>M</span>
-                                <span>T</span>
-                                <span>S</span>
-                                <span>+</span>
-                            </div>
-                            <div class="hero-newsletter-stats">
-                                Rejoins <strong>5000+ lecteurs</strong>
-                            </div>
-                        </div>
-                        <form 
-                            action="https://app.kit.com/forms/8987350/subscriptions" 
-                            class="hero-newsletter-form seva-form formkit-form" 
-                            method="post" 
-                            data-sv-form="8987350" 
-                            data-uid="af2e0fc1e5" 
-                            data-format="inline" 
-                            data-version="5"
-                        >
-                            <input 
-                                name="email_address" 
-                                type="email" 
-                                required 
-                                placeholder="Ton email"
-                                autocomplete="email"
-                            />
-                            <button type="submit" class="btn btn-primary">S'inscrire</button>
-                        </form>
-                        <p class="hero-newsletter-note">Pas de spam. Desabonnement en un clic.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Social Proof -->
-            <div class="hero-social-proof">
-                <div class="hero-proof-item">
-                    <span class="hero-proof-number"><span class="counter" data-target="400">0</span>+</span>
-                    <span class="hero-proof-label">visiteurs accueillis</span>
-                </div>
-                <div class="hero-proof-item">
-                    <span class="hero-proof-number"><span class="counter" data-target="3">0</span></span>
-                    <span class="hero-proof-label">festivals crees</span>
-                </div>
-                <div class="hero-proof-item">
-                    <span class="hero-proof-number"><span class="counter" data-target="45">0</span></span>
-                    <span class="hero-proof-label">evenements</span>
-                </div>
-                <div class="hero-proof-item">
-                    <span class="hero-proof-number"><span class="counter" data-target="200" data-suffix="K">0</span></span>
-                    <span class="hero-proof-label">vues YouTube</span>
-                </div>
-            </div>
+<Layout title="Charly Aubert">
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <div class="hero-wrapper">
+    <section class="hero-card">
+      <div class="hero-grid">
+        <div class="hero-image">
+          <img src="/images/charly-portrait.jpg" alt="Charly Aubert" />
         </div>
+        <div class="hero-text">
+          <h1>Charly Aubert</h1>
+          <p class="hero-intro">
+            Je construis le plus grand batiment en paille porteuse du monde.
+          </p>
+          <p class="hero-desc">
+            J'utilise l'IA pour me reconnecter a ce qui ne change jamais.
+          </p>
+          <p class="hero-signature">// les pieds sur terre, la tete dans les etoiles.</p>
+          <div class="hero-links">
+            <a href="https://www.youtube.com/@charlyaubert" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/laom.coliving/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/charlyaubert/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:charly@laom.fr" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Newsletter integree -->
+      <div class="hero-newsletter">
+        <form action="https://app.kit.com/forms/8987350/subscriptions" method="post" class="hero-nl-form seva-form formkit-form" data-sv-form="8987350" data-uid="af2e0fc1e5" data-format="inline" data-version="5">
+          <input name="email_address" type="email" required placeholder="email@exemple.com" />
+          <button type="submit">s'inscrire</button>
+        </form>
+        <p class="hero-nl-hint">Coulisses, reflexions, decisions cles. Pas de spam.</p>
+      </div>
     </section>
+  </div>
 
-    <!-- Who Am I Section -->
-    <section class="who-am-i animate-on-scroll">
-        <div class="who-am-i-container">
-            <div class="who-am-i-image">
-                <img src="/images/charly-portrait.jpg" alt="Charly Aubert" loading="lazy" />
-            </div>
-            <div class="who-am-i-content">
-                <h2>Salut, moi c'est Charly.</h2>
-                <p>
-                    Apres des annees dans le monde corporate, j'ai tout quitte pour creer 
-                    ce qui me semblait impossible : un eco-village en Dordogne avec le plus 
-                    grand batiment en paille porteuse au monde.
-                </p>
-                <p>
-                    Aujourd'hui, je partage ce que j'ai appris sur la creation de projets 
-                    regeneratifs, l'organisation personnelle augmentee par l'IA, et une 
-                    philosophie de vie basee sur les "impulsions de joie".
-                </p>
-                <a href="/mon-histoire" class="who-am-i-link">
-                    Decouvrir mon histoire
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                </a>
-            </div>
+  <!-- ============================================
+       CE QUE J'ECRIS — liste terminal
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <span class="badge">~/articles</span>
+      <h2 class="section-title">Ce que j'ecris</h2>
+      <ul class="article-list">
+        <li>
+          <a href="/blog/piloter-sa-vie-avec-une-ia">
+            <span class="article-prefix">$</span>
+            <span class="article-title">Comment je pilote un ecolieu de 21 hectares avec une IA</span>
+            <span class="article-arrow">-&gt;</span>
+          </a>
+        </li>
+        <li>
+          <a href="/blog/grand-shambala">
+            <span class="article-prefix">$</span>
+            <span class="article-title">Grand Shambala — le plus grand batiment en paille porteuse au monde</span>
+            <span class="article-arrow">-&gt;</span>
+          </a>
+        </li>
+        <li>
+          <a href="/blog/petit-shambala">
+            <span class="article-prefix">$</span>
+            <span class="article-title">Petit Shambala — le batiment qu'on n'avait jamais prevu de construire</span>
+            <span class="article-arrow">-&gt;</span>
+          </a>
+        </li>
+        <li>
+          <a href="/blog/salle-de-pratique">
+            <span class="article-prefix">$</span>
+            <span class="article-title">Comment 20 benevoles ont construit le Shala en un ete</span>
+            <span class="article-arrow">-&gt;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CE QUE JE PROPOSE
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <span class="badge">~/offres</span>
+      <h2 class="section-title">Ce que je propose</h2>
+      <div class="offers-grid">
+        <div class="offer">
+          <h3>Clarte</h3>
+          <p>Un weekend immersif a LAOM pour retrouver ta boussole interieure. Ancrage, silence, clarte.</p>
+          <a href="https://laom.fr/clarte/" target="_blank" rel="noopener" class="offer-link">decouvrir -&gt;</a>
         </div>
-    </section>
-
-    <!-- Ebooks Section -->
-    <section class="ebooks-section animate-on-scroll">
-        <div class="ebooks-container">
-            <h2 class="section-title">3 ressources gratuites</h2>
-            <p class="section-subtitle">Pour t'aider a creer ta vie alignee</p>
-            
-            <div class="ebooks-grid stagger-animation">
-                <!-- Ebook 1: La Home -->
-                <div class="ebook-card">
-                    <div class="ebook-cover">
-                        <div class="ebook-book">
-                            <div class="ebook-front ebook-green">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                </svg>
-                                <span class="ebook-front-title">Creer son cadre de vie</span>
-                                <span class="ebook-front-subtitle">La Home</span>
-                            </div>
-                            <div class="ebook-spine ebook-green"></div>
-                        </div>
-                    </div>
-                    <h3 class="ebook-title">Creer son cadre de vie</h3>
-                    <p class="ebook-subtitle">Guide pratique pour creer ton lieu de vie ideal</p>
-                    <a href="#newsletter" class="btn btn-ebook">Telecharger gratuitement</a>
-                </div>
-
-                <!-- Ebook 2: Grand Shambala -->
-                <div class="ebook-card">
-                    <div class="ebook-cover">
-                        <div class="ebook-book">
-                            <div class="ebook-front ebook-warm">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="3" y1="9" x2="21" y2="9"></line>
-                                    <line x1="9" y1="21" x2="9" y2="9"></line>
-                                </svg>
-                                <span class="ebook-front-title">Construction du Grand Shambala</span>
-                                <span class="ebook-front-subtitle">Les coulisses</span>
-                            </div>
-                            <div class="ebook-spine ebook-warm"></div>
-                        </div>
-                    </div>
-                    <h3 class="ebook-title">Le Grand Shambala</h3>
-                    <p class="ebook-subtitle">Les coulisses de la construction de LAOM</p>
-                    <a href="#newsletter" class="btn btn-ebook">Telecharger gratuitement</a>
-                </div>
-
-                <!-- Ebook 3: Framework -->
-                <div class="ebook-card">
-                    <div class="ebook-cover">
-                        <div class="ebook-book">
-                            <div class="ebook-front ebook-blue">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-                                </svg>
-                                <span class="ebook-front-title">Framework vie alignee</span>
-                                <span class="ebook-front-subtitle">Philosophie</span>
-                            </div>
-                            <div class="ebook-spine ebook-blue"></div>
-                        </div>
-                    </div>
-                    <h3 class="ebook-title">Vie alignee</h3>
-                    <p class="ebook-subtitle">Ma methode de prise de decision par impulsions de joie</p>
-                    <a href="#newsletter" class="btn btn-ebook">Telecharger gratuitement</a>
-                </div>
-            </div>
+        <div class="offer">
+          <h3>Mentorat</h3>
+          <p>Accompagnement individuel pour entrepreneurs qui veulent construire depuis l'alignement, pas depuis la peur.</p>
+          <a href="https://laom.fr/mentorat/" target="_blank" rel="noopener" class="offer-link">en savoir plus -&gt;</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- 3 Pillars Section -->
-    <section id="pillars" class="pillars animate-on-scroll">
-        <div class="pillars-container">
-            <h2 class="section-title">Comment puis-je t'aider ?</h2>
-            <p class="section-subtitle">Trois piliers pour creer une vie alignee</p>
-            
-            <div class="pillars-grid stagger-animation">
-                <!-- Pillar 1: Cadre de vie -->
-                <div class="pillar-card">
-                    <div class="pillar-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="pillar-title">Creer son cadre de vie</h3>
-                    <p class="pillar-description">
-                        Tu veux creer un eco-village, un coliving, ou un projet d'habitat partage ? 
-                        Je t'accompagne de A a Z.
-                    </p>
-                    <ul class="pillar-list">
-                        <li>Financement de projets complexes</li>
-                        <li>Construction paille & materiaux naturels</li>
-                        <li>Navigation juridique & administrative</li>
-                        <li>Business model coliving</li>
-                    </ul>
-                </div>
-
-                <!-- Pillar 2: Systeme -->
-                <div class="pillar-card">
-                    <div class="pillar-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="pillar-title">Batir son systeme</h3>
-                    <p class="pillar-description">
-                        Tu veux un systeme d'organisation qui travaille pour toi, augmente par l'IA ?
-                    </p>
-                    <ul class="pillar-list">
-                        <li>Personal Operating System (POS)</li>
-                        <li>Systemes d'organisation avec IA</li>
-                        <li>Automatisation & workflows</li>
-                        <li>Productivite alignee</li>
-                    </ul>
-                </div>
-
-                <!-- Pillar 3: Framework -->
-                <div class="pillar-card">
-                    <div class="pillar-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M12 16v-4"></path>
-                            <path d="M12 8h.01"></path>
-                        </svg>
-                    </div>
-                    <h3 class="pillar-title">Aligner sa vie</h3>
-                    <p class="pillar-description">
-                        Tu cherches une philosophie de vie coherente ? Decouvre ma methode 
-                        de prise de decision par "impulsions de joie".
-                    </p>
-                    <ul class="pillar-list">
-                        <li>Prise de decision par impulsions de joie</li>
-                        <li>Philosophie de vie integree</li>
-                        <li>Alignement personnel & professionnel</li>
-                        <li>Design de vie intentionnel</li>
-                    </ul>
-                </div>
-            </div>
+  <!-- ============================================
+       LAOM
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="laom-card">
+        <div class="laom-image">
+          <img src="/images/laom-vue-ensemble.jpg" alt="LAOM — ecolieu dans le sud de l'Aveyron" />
         </div>
-    </section>
-
-    <!-- Photo Gallery -->
-    <section class="gallery animate-on-scroll">
-        <div class="gallery-grid">
-            <div class="gallery-item gallery-item-large">
-                <img src="/images/laom-vue-ensemble.jpg" alt="LAOM - Vue d'ensemble" loading="lazy" />
-                <div class="gallery-overlay">
-                    <span>LAOM - 21 hectares</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="/images/charly-chantier.jpg" alt="Charly sur le chantier" loading="lazy" />
-                <div class="gallery-overlay">
-                    <span>Sur le chantier</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="/images/laom-construction.jpg" alt="Construction paille" loading="lazy" />
-                <div class="gallery-overlay">
-                    <span>Construction paille</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="/images/charly-lampe-terre.jpg" alt="Charly en reflexion" loading="lazy" />
-                <div class="gallery-overlay">
-                    <span>Creation & reflexion</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="/images/salle-pratique.jpg" alt="Salle de pratique LAOM" loading="lazy" />
-                <div class="gallery-overlay">
-                    <span>Salle de pratique</span>
-                </div>
-            </div>
+        <div class="laom-content">
+          <h2>LAOM</h2>
+          <p>21 hectares de foret, riviere et prairie dans le sud de l'Aveyron. Un ecolieu ou la conscience rencontre le reel — un mur en paille a la fois.</p>
+          <a href="https://laom.fr" target="_blank" rel="noopener" class="laom-link">decouvrir laom.fr -&gt;</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials animate-on-scroll">
-        <div class="testimonials-container">
-            <h2 class="section-title">Ce qu'ils disent</h2>
-            <p class="section-subtitle">Retours de visiteurs, participants et collaborateurs</p>
-            
-            <div class="testimonials-carousel">
-                <div class="testimonials-track">
-                    <div class="testimonial-card">
-                        <p class="testimonial-quote">
-                            Visiter LAOM a ete un declic pour moi. Voir qu'il est possible de construire 
-                            autrement, de vivre autrement. Charly partage avec une generosite rare.
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">M</div>
-                            <span class="testimonial-name">Marie L.</span>
-                            <span class="testimonial-role">Visiteuse LAOM</span>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-card">
-                        <p class="testimonial-quote">
-                            Le mentorat avec Charly m'a aide a structurer mon projet d'eco-lieu. 
-                            Son experience concrete et sa vision claire sont inestimables.
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">T</div>
-                            <span class="testimonial-name">Thomas B.</span>
-                            <span class="testimonial-role">Porteur de projet coliving</span>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-card">
-                        <p class="testimonial-quote">
-                            La newsletter de Charly est une de mes lectures preferees. Des reflexions 
-                            profondes, des retours d'experience honnetes, et toujours des outils concrets.
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">S</div>
-                            <span class="testimonial-name">Sophie D.</span>
-                            <span class="testimonial-role">Abonnee newsletter</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="carousel-controls">
-                    <button class="carousel-btn carousel-prev" aria-label="Temoignage precedent">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </button>
-                    <div class="carousel-dots">
-                        <button class="carousel-dot active" data-index="0" aria-label="Temoignage 1"></button>
-                        <button class="carousel-dot" data-index="1" aria-label="Temoignage 2"></button>
-                        <button class="carousel-dot" data-index="2" aria-label="Temoignage 3"></button>
-                    </div>
-                    <button class="carousel-btn carousel-next" aria-label="Temoignage suivant">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Charly Aubert</p>
+      <p class="footer-tagline">// les pieds sur terre, la tete dans les etoiles.</p>
+      <div class="footer-links">
+        <a href="https://www.youtube.com/@charlyaubert" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com/laom.coliving/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.linkedin.com/in/charlyaubert/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:charly@laom.fr">Email</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Charly Aubert</p>
+    </div>
+  </footer>
 
-    <!-- Videos Section -->
-    <section class="videos animate-on-scroll">
-        <div class="videos-container">
-            <h2 class="section-title">Decouvre les coulisses de LAOM</h2>
-            <p class="section-subtitle">Vlogs chantier, retours d'experience et reflexions</p>
-            <div class="videos-grid">
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/Bltd5fr5VVY" allowfullscreen loading="lazy" title="Video LAOM 1"></iframe>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/auHaZArbVn4" allowfullscreen loading="lazy" title="Video LAOM 2"></iframe>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/etHdDGhW4Lg" allowfullscreen loading="lazy" title="Video LAOM 3"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="videos-cta">
-                <a href="https://www.youtube.com/@charlyaubert" target="_blank" rel="noopener" class="btn btn-secondary">
-                    Voir toutes les videos
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section class="blog-section animate-on-scroll">
-        <div class="blog-section-container">
-            <h2 class="section-title">Mes reflexions</h2>
-            <p class="section-subtitle">Articles sur ma philosophie, mes projets et ma vision</p>
-            
-            <div class="blog-grid">
-                <a href="/blog/philosophie-de-vie" class="blog-card">
-                    <span class="blog-card-tag">Philosophie</span>
-                    <h3 class="blog-card-title">Les impulsions de joie : ma methode de prise de decision</h3>
-                    <p class="blog-card-excerpt">
-                        Comment j'ai appris a ecouter mes impulsions de joie pour prendre 
-                        des decisions alignees avec qui je suis vraiment.
-                    </p>
-                    <span class="blog-card-link">
-                        Lire l'article
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </span>
-                </a>
-                
-                <a href="/blog/histoire-de-laom" class="blog-card">
-                    <span class="blog-card-tag">LAOM</span>
-                    <h3 class="blog-card-title">L'histoire de LAOM : du reve au plus grand batiment en paille</h3>
-                    <p class="blog-card-excerpt">
-                        Comment un reve fou est devenu realite : les coulisses de la creation 
-                        de LAOM, de l'idee initiale a aujourd'hui.
-                    </p>
-                    <span class="blog-card-link">
-                        Lire l'article
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </span>
-                </a>
-                
-                <a href="/blog/economie-regenerative" class="blog-card">
-                    <span class="blog-card-tag">Vision</span>
-                    <h3 class="blog-card-title">Economie regenerative vs economie extractive</h3>
-                    <p class="blog-card-excerpt">
-                        Pourquoi je crois que l'avenir appartient aux projets qui regenerent 
-                        plutot qu'a ceux qui extraient.
-                    </p>
-                    <span class="blog-card-link">
-                        Lire l'article
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </span>
-                </a>
-                
-                <a href="/blog/fractale-du-beau" class="blog-card">
-                    <span class="blog-card-tag">Philosophie</span>
-                    <h3 class="blog-card-title">La fractale du beau</h3>
-                    <p class="blog-card-excerpt">
-                        Le beau a toutes les echelles : comment ce principe guide mes decisions 
-                        dans la construction, la vie et les relations.
-                    </p>
-                    <span class="blog-card-link">
-                        Lire l'article
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section id="newsletter" class="newsletter animate-on-scroll">
-        <div class="newsletter-container">
-            <div class="newsletter-content">
-                <h2 class="newsletter-title">Rejoins 5000+ personnes qui creent leur vie alignee</h2>
-                <p class="newsletter-description">
-                    Chaque semaine, je partage les coulisses de LAOM, mes reflexions 
-                    sur la creation de projets regeneratifs, et des outils concrets.
-                </p>
-                <div class="ebooks-preview">
-                    <p class="ebooks-title">+ 3 ebooks gratuits pour les inscrits :</p>
-                    <ul class="ebooks-list">
-                        <li>Construction du Grand Shambala</li>
-                        <li>Creer son cadre de vie : La Home</li>
-                        <li>Framework pour creer une vie alignee</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="newsletter-form">
-                <form 
-                    action="https://app.kit.com/forms/8987350/subscriptions" 
-                    class="seva-form formkit-form" 
-                    method="post" 
-                    data-sv-form="8987350" 
-                    data-uid="af2e0fc1e5" 
-                    data-format="inline" 
-                    data-version="5"
-                >
-                    <div class="form-fields">
-                        <input 
-                            class="form-input" 
-                            name="email_address" 
-                            type="email" 
-                            required 
-                            aria-label="Ton adresse email" 
-                            placeholder="Ton adresse email"
-                            autocomplete="email"
-                        />
-                        <button type="submit" class="btn btn-primary form-submit">
-                            Rejoindre
-                        </button>
-                    </div>
-                    <p class="form-note">Pas de spam. Desabonnement en un clic.</p>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resources Section -->
-    <section id="mentorat" class="resources animate-on-scroll">
-        <div class="resources-container">
-            <h2 class="section-title">Ressources</h2>
-            
-            <div class="resources-grid">
-                <!-- Mentorat -->
-                <div class="resource-card resource-card-featured">
-                    <div class="resource-image">
-                        <img src="/images/charly-portrait.jpg" alt="Mentorat avec Charly" loading="lazy" />
-                    </div>
-                    <div class="resource-content">
-                        <span class="resource-badge">Mentorat 1:1</span>
-                        <h3 class="resource-title">Travaillons ensemble</h3>
-                        <p class="resource-description">
-                            Tu as un projet d'eco-construction, de coliving, ou tu veux 
-                            optimiser ton systeme personnel ? Je peux t'aider.
-                        </p>
-                        <ul class="resource-list">
-                            <li>Appel decouverte de 30 min (gratuit)</li>
-                            <li>Accompagnement sur mesure</li>
-                            <li>Acces a mon reseau</li>
-                        </ul>
-                        <a href="https://calendly.com/votre-lien" target="_blank" rel="noopener" class="btn btn-primary">
-                            Reserver un appel decouverte
-                        </a>
-                    </div>
-                </div>
-
-                <!-- POS Open Source -->
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
-                    </div>
-                    <div class="resource-content">
-                        <span class="resource-badge">Open Source</span>
-                        <h3 class="resource-title">Personal Operating System</h3>
-                        <p class="resource-description">
-                            Mon systeme d'organisation personnelle augmente par l'IA. 
-                            Gratuit et open source pour que tu puisses creer le tien.
-                        </p>
-                        <a href="https://github.com/votre-username/pos" target="_blank" rel="noopener" class="btn btn-secondary">
-                            Voir sur GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="final-cta animate-on-scroll">
-        <div class="final-cta-container">
-            <div class="final-cta-image">
-                <img src="/images/charly-fenetre.jpeg" alt="Charly Aubert" loading="lazy" />
-            </div>
-            <div class="final-cta-content">
-                <h2 class="final-cta-title">Parlons de ton projet.</h2>
-                <p class="final-cta-description">
-                    Que tu veuilles creer un lieu de vie, optimiser ton systeme, 
-                    ou simplement echanger sur ta vision - je suis la.
-                </p>
-                <p class="final-cta-note">30 minutes. Gratuit. Sans engagement.</p>
-                <a href="https://calendly.com/votre-lien" target="_blank" rel="noopener" class="btn btn-primary btn-large">
-                    Reserver un appel
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <p class="footer-name">Charly Aubert</p>
-                <p class="footer-tagline">Creer une vie alignee</p>
-            </div>
-            <div class="footer-links">
-                <a href="https://www.youtube.com/@charlyaubert" target="_blank" rel="noopener">YouTube</a>
-                <a href="https://www.instagram.com/laom.coliving/" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://github.com/votre-username" target="_blank" rel="noopener">GitHub</a>
-                <a href="mailto:contact@charlyaubert.com">Email</a>
-            </div>
-            <p class="footer-copyright">&copy; 2025 Charly Aubert. Tous droits reserves.</p>
-        </div>
-    </footer>
 </Layout>
 
-<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+<style>
+/* ========================================
+   HERO
+   ======================================== */
+.hero-wrapper {
+  padding: var(--space-md) var(--space-md) 0;
+}
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.15
-        };
+.hero-card {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 3rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    
-                    // Trigger counter animation
-                    const counters = entry.target.querySelectorAll('.counter');
-                    counters.forEach(counter => animateCounter(counter as HTMLElement));
-                }
-            });
-        }, observerOptions);
+.hero-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
 
-        document.querySelectorAll('.animate-on-scroll, .stagger-animation').forEach(el => {
-            observer.observe(el);
-        });
+.hero-image {
+  flex-shrink: 0;
+}
 
-        // Also observe hero social proof
-        const heroSocialProof = document.querySelector('.hero-social-proof');
-        if (heroSocialProof) {
-            observer.observe(heroSocialProof);
-        }
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  filter: brightness(0.9) saturate(0.85);
+  border: 1px solid var(--color-border);
+}
 
-        // Animated counters
-        function animateCounter(counter: HTMLElement) {
-            if (counter.dataset.animated) return;
-            counter.dataset.animated = 'true';
-            
-            const target = parseInt(counter.dataset.target || '0');
-            const suffix = counter.dataset.suffix || '';
-            const duration = 2000;
-            const increment = target / (duration / 16);
-            let current = 0;
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
 
-            const updateCounter = () => {
-                current += increment;
-                if (current < target) {
-                    counter.textContent = Math.floor(current) + suffix;
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    counter.textContent = target + suffix;
-                }
-            };
+h1 {
+  font-family: var(--font-mono);
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
 
-            updateCounter();
-        }
+.hero-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text-sub);
+}
 
-        // Testimonials carousel
-        const track = document.querySelector('.testimonials-track') as HTMLElement | null;
-        const cards = document.querySelectorAll('.testimonial-card');
-        const dots = document.querySelectorAll('.carousel-dot');
-        const prevBtn = document.querySelector('.carousel-prev');
-        const nextBtn = document.querySelector('.carousel-next');
-        
-        if (track && cards.length > 0) {
-            let currentIndex = 0;
-            const totalSlides = cards.length;
+.hero-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
 
-            function updateCarousel() {
-                if (track) {
-                    track.style.transform = `translateX(-${currentIndex * 100}%)`;
-                }
-                dots.forEach((dot, index) => {
-                    dot.classList.toggle('active', index === currentIndex);
-                });
-            }
+.hero-signature {
+  font-family: var(--font-mono);
+  color: var(--color-green);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
 
-            function nextSlide() {
-                currentIndex = (currentIndex + 1) % totalSlides;
-                updateCarousel();
-            }
+.hero-links {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
 
-            function prevSlide() {
-                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-                updateCarousel();
-            }
+.hero-links a {
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
+}
 
-            if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-            if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-            
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    currentIndex = index;
-                    updateCarousel();
-                });
-            });
+.hero-links a:hover {
+  color: var(--color-green);
+}
 
-            // Auto-play
-            let autoPlay = setInterval(nextSlide, 5000);
-            
-            const carousel = document.querySelector('.testimonials-carousel');
-            if (carousel) {
-                carousel.addEventListener('mouseenter', () => clearInterval(autoPlay));
-                carousel.addEventListener('mouseleave', () => {
-                    autoPlay = setInterval(nextSlide, 5000);
-                });
-            }
+/* ========================================
+   SECTIONS
+   ======================================== */
+.section {
+  padding: var(--space-xl) var(--space-md);
+}
 
-            // Touch support
-            let touchStartX = 0;
-            let touchEndX = 0;
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
 
-            track.addEventListener('touchstart', (e: TouchEvent) => {
-                touchStartX = e.changedTouches[0].screenX;
-            }, { passive: true });
+.badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-orange);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
 
-            track.addEventListener('touchend', (e: TouchEvent) => {
-                touchEndX = e.changedTouches[0].screenX;
-                const diff = touchStartX - touchEndX;
-                if (Math.abs(diff) > 50) {
-                    if (diff > 0) nextSlide();
-                    else prevSlide();
-                }
-            }, { passive: true });
-        }
-    });
-</script>
+.section-title {
+  font-family: var(--font-mono);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+/* ========================================
+   ARTICLES — liste terminal
+   ======================================== */
+.article-list {
+  list-style: none;
+}
+
+.article-list li {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article-list li:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.article-list a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 0.5rem;
+  color: var(--color-text-sub);
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-radius: var(--radius-sm);
+  margin: 0 -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.article-list a:hover {
+  color: var(--color-text);
+  background-color: var(--color-green-dim);
+}
+
+.article-prefix {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-green);
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.article-list a:hover .article-prefix {
+  opacity: 1;
+}
+
+.article-title {
+  font-size: 1rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.article-arrow {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-green);
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.article-list a:hover .article-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* ========================================
+   OFFRES
+   ======================================== */
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.offer {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  transition: border-color 0.2s ease;
+}
+
+.offer:hover {
+  border-color: var(--color-border-hover);
+}
+
+.offer h3 {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-mauve);
+  margin-bottom: 0.75rem;
+}
+
+.offer p {
+  font-size: 0.95rem;
+  color: var(--color-text-sub);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.offer-link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-green);
+  transition: color 0.2s ease;
+}
+
+.offer-link:hover {
+  color: var(--color-blue);
+}
+
+/* ========================================
+   LAOM
+   ======================================== */
+.laom-card {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.laom-image {
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+}
+
+.laom-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85) saturate(0.9);
+}
+
+.laom-content {
+  padding: 2rem 2.5rem;
+}
+
+.laom-content h2 {
+  font-family: var(--font-mono);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.laom-content p {
+  font-size: 1rem;
+  color: var(--color-text-sub);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.laom-link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-green);
+  transition: color 0.2s ease;
+}
+
+.laom-link:hover {
+  color: var(--color-blue);
+}
+
+/* ========================================
+   HERO NEWSLETTER (integree dans la hero card)
+   ======================================== */
+.hero-newsletter {
+  border-top: 1px solid var(--color-border);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+.hero-nl-form {
+  display: flex;
+  gap: 0.75rem;
+  max-width: 420px;
+}
+
+.hero-nl-form input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  color: var(--color-text);
+  transition: border-color 0.2s ease;
+}
+
+.hero-nl-form input:focus {
+  outline: none;
+  border-color: var(--color-green);
+}
+
+.hero-nl-form input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.hero-nl-form button {
+  font-family: var(--font-mono);
+  background: var(--color-green);
+  color: var(--color-bg);
+  padding: 0.7rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.hero-nl-form button:hover {
+  opacity: 0.85;
+}
+
+.hero-nl-hint {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.footer-name {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.footer-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-green);
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-green);
+}
+
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  opacity: 0.5;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+  .hero-wrapper {
+    padding: var(--space-sm);
+  }
+
+  .hero-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
+
+  .hero-links {
+    justify-content: center;
+  }
+
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-nl-form {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .hero-newsletter {
+    text-align: center;
+  }
+
+  .laom-image {
+    height: 220px;
+  }
+
+  .laom-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .hero-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section {
+    padding: var(--space-lg) var(--space-sm);
+  }
+
+  .offer {
+    padding: 1.5rem;
+  }
+
+  .laom-image {
+    height: 180px;
+  }
+
+  .laom-content {
+    padding: 1.25rem;
+  }
+}
+</style>
