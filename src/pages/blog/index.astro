@@ -3,32 +3,18 @@ import Layout from '../../layouts/Layout.astro';
 
 const articles = [
   {
-    title: "Comment je pilote un ecolieu de 21 hectares avec une IA",
-    description: "Recit personnel d'un systeme de pilotage de vie construit avec Claude Code, Obsidian et la methode PARA.",
+    title: "Transformer sa relation a l'argent — vivre la vie de son choix",
+    description: "De la prise de conscience a l'independance financiere. Protocole concret, levier bancaire, interets composes, et pourquoi la frugalite est un superpouvoir.",
+    date: "18 fevrier 2026",
+    slug: "argent",
+    tags: ["argent", "independance", "strategie"]
+  },
+  {
+    title: "NILA Blueprint — Construis ton copilote de vie",
+    description: "Guide complet pour installer un systeme de pilotage de vie avec une IA. Obsidian, PARA, elans, decharge vocale. Gratuit et open source.",
     date: "8 fevrier 2026",
-    slug: "piloter-sa-vie-avec-une-ia",
-    tags: ["ia", "organisation", "claude-code"]
-  },
-  {
-    title: "Grand Shambala — le plus grand batiment en paille porteuse au monde",
-    description: "L'histoire d'un batiment de 800m2 en paille porteuse, du premier mur au bardage Corten.",
-    date: "3 fevrier 2026",
-    slug: "grand-shambala",
-    tags: ["construction", "paille-porteuse", "ecolieu"]
-  },
-  {
-    title: "Petit Shambala — le batiment qu'on n'avait jamais prevu de construire",
-    description: "Comment un studio de yoga refuse en Occitanie est devenu notre maison de 73m2.",
-    date: "3 fevrier 2026",
-    slug: "petit-shambala",
-    tags: ["construction", "eco-construction", "histoire"]
-  },
-  {
-    title: "Comment 20 benevoles ont construit le Shala en un ete",
-    description: "L'histoire d'un chantier participatif : 121m2, 6 metres de haut, zero professionnel.",
-    date: "3 fevrier 2026",
-    slug: "salle-de-pratique",
-    tags: ["construction", "communaute", "chantier-participatif"]
+    slug: "nila",
+    tags: ["ia", "organisation", "open-source"]
   }
 ];
 ---
@@ -36,7 +22,7 @@ const articles = [
 <Layout title="Blog — Charly Aubert" description="Articles sur la construction, l'IA, et la vie a LAOM.">
   <article class="prose">
     <h1>Ce que j'ecris</h1>
-    <span class="update-date">4 articles</span>
+    <span class="update-date">2 articles</span>
 
     <div class="blog-list">
       {articles.map((article) => (
