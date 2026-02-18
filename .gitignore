@@ -30,3 +30,10 @@ npm-debug.log*
 # Raw photos (not used in site)
 Photos/
 articles/
+
+# Dev tools / agents (not site content)
+.opencode/
+_bmad/
+
+# Spec docs (kept locally, not deployed)
+11_REFONTE_SITE_CHARLY_AUBERT.md
