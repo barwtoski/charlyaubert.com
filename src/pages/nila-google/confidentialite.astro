@@ -1,0 +1,29 @@
+---
+import NilaGoogle from '../../layouts/NilaGoogle.astro';
+---
+<NilaGoogle title="Politique de confidentialité" description="Données Google utilisées par Nila, fonctionnement du connecteur, destinataires, conservation et retrait de l’accès.">
+  <h1>Politique de confidentialité</h1>
+  <p class="date">Application Nila · Mise à jour le 15 octobre 2026</p>
+  <p>Cette politique décrit la connexion Google de Nila, exploitée par Charly Aubert. Contact : <a href="mailto:orion.aubert@gmail.com">orion.aubert@gmail.com</a>. Elle concerne l’utilisation des données obtenues via les API Google par cette application.</p>
+  <h2>Données accessibles et finalités</h2>
+  <p>Nila reçoit les informations d’identité nécessaires à la connexion, notamment l’adresse e-mail du compte. Selon les permissions accordées et les outils activés, le connecteur peut accéder au contenu et aux métadonnées des fichiers Drive, Docs, Sheets, Slides et Forms, aux réponses aux formulaires, aux messages Gmail, aux calendriers, aux contacts, aux tâches et aux autres services Google demandés sur l’écran de consentement.</p>
+  <p>Ces accès servent à exécuter les fonctions de l’assistant demandées par l’utilisateur : retrouver une information, lire ou résumer un document, préparer ou modifier un contenu, organiser un calendrier ou effectuer une action autorisée. Les permissions Google peuvent être plus larges que les données utiles à une demande précise ; examinez-les avant de les accepter.</p>
+  <h2>Traitement et destinataires</h2>
+  <p>Nila utilise un connecteur Google Workspace exécuté dans l’environnement où l’assistant est installé. Les résultats des outils sont remis à cet assistant. Les extraits, messages ou documents nécessaires à une demande peuvent ainsi être transmis au fournisseur d’intelligence artificielle configuré pour cette session et apparaître dans son historique.</p>
+  <p>Le fournisseur d’IA et le lieu d’exécution dépendent de l’installation utilisée. Avant toute connexion, demandez à votre administrateur ou à Charly quels services traitent vos données et quelles règles de conservation s’appliquent. Une exécution locale du connecteur ne signifie pas que tous les traitements sont locaux.</p>
+  <p>Les transferts de données Google doivent se limiter à la fourniture ou à l’amélioration des fonctionnalités visibles demandées par l’utilisateur, avec son consentement, ou aux besoins de sécurité et aux obligations légales applicables. Les données Google ne doivent pas être vendues, utilisées pour la publicité ciblée ou pour entraîner des modèles d’intelligence artificielle généralistes.</p>
+  <p>L’utilisation et le transfert des informations reçues des API Google par Nila sont soumis à la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, notamment à ses exigences d’utilisation limitée (« Limited Use »).</p>
+  <h2>Authentification et stockage</h2>
+  <p>L’authentification se fait auprès de Google : Nila ne reçoit pas votre mot de passe Google. Le connecteur conserve des jetons OAuth dans son environnement d’exécution afin de renouveler l’accès autorisé. La protection de cet environnement et l’accès à ses fichiers relèvent de son administrateur ; cette page ne garantit pas un chiffrement spécifique de ces fichiers.</p>
+  <p>Les données consultées peuvent être conservées dans l’historique de l’assistant, ses journaux ou les fichiers produits à votre demande. Leur durée de conservation dépend de ces outils et de leur configuration. Les jetons sont conservés jusqu’à leur suppression dans l’installation concernée ; leur utilisation cesse si Google les expire ou si vous révoquez l’autorisation.</p>
+  <h2>Retirer l’accès et supprimer les données</h2>
+  <ol>
+    <li>Ouvrez les <a href="https://myaccount.google.com/connections">connexions tierces de votre compte Google</a>, sélectionnez Nila et retirez son accès.</li>
+    <li>Demandez à l’administrateur de l’assistant de supprimer la connexion enregistrée et ses jetons.</li>
+    <li>Supprimez, si nécessaire, les conversations et copies exportées dans les outils qui les conservent.</li>
+  </ol>
+  <p>Révoquer l’accès empêche de nouvelles lectures ou actions via cette autorisation. Cela ne supprime pas automatiquement les copies déjà créées ni les documents d’origine dans Google.</p>
+  <p>Pour une question sur les données traitées par Charly Aubert, une demande d’accès, de correction ou de suppression, écrivez à <a href="mailto:orion.aubert@gmail.com">orion.aubert@gmail.com</a> en précisant l’installation concernée. Ne transmettez aucun mot de passe ou jeton dans votre message.</p>
+  <h2>Cette page publique</h2>
+  <p>Ces pages de présentation et de confidentialité sont hébergées sur charlyaubert.com via Cloudflare. Elles n’intègrent aucun formulaire de connexion Google, outil publicitaire ou script de mesure d’audience. L’hébergeur peut traiter les informations techniques nécessaires à la livraison et à la sécurité du site, comme l’adresse IP et les données de requête.</p>
+</NilaGoogle>
